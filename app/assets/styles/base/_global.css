@@ -4,11 +4,14 @@ body {
 }
 
 img {
-  max-width: 100%;
   height: auto;
 }
 
 * {
   /* change the default width calculations of browser */
   box-sizing: border-box;
+}
+
+a {
+  color: $mainOrange;
 }

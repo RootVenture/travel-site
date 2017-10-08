@@ -3,7 +3,8 @@
   overflow: hidden;
   padding-left: 18px;
   pading-right: 18px;
-  max-width: 1200px;
+  /* added 36px to this due to the border-box global setting */
+  max-width: 1236px;
   /* center our content */
   margin-left: auto;
   margin-right: auto;
@@ -16,5 +17,13 @@
   .wrapper {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  &--b-margin {
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
+    }
   }
 }
