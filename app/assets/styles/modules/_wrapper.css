@@ -1,0 +1,18 @@
+.wrapper {
+  padding-left: 18px;
+  pading-right: 18px;
+  max-width: 1200px;
+  /* center our content */
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium {
+    max-width: 976px;
+  }
+
+  /* no additional horizontal padding on nested wrappers */
+  & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
