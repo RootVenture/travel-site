@@ -462,6 +462,12 @@ img {
   height: auto;
 }
 
+* {
+  /* change the default width calculations of browser */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 /* underscore in the file name means that it is a module (part of another file */
 
 .large-hero {
@@ -570,6 +576,8 @@ img {
   }
 
 .wrapper {
+  /* overflow necessary to account for row.css functionality */
+  overflow: hidden;
   padding-left: 18px;
   pading-right: 18px;
   max-width: 1200px;
@@ -584,7 +592,7 @@ img {
 
 /* no additional horizontal padding on nested wrappers */
 
-.wrapper {
+.wrapper .wrapper {
     padding-left: 0;
     padding-right: 0;
   }
@@ -657,4 +665,35 @@ img {
 
 .headline--b-margin-large {
     margin-bottom: 1.6em;
+  }
+
+/* creates pseudo-blank-content with CSS */
+
+.row::after {
+    content: "";
+    clear: both;
+    /* added browser support */
+    display: table;
+  }
+
+.row--gutters {
+    padding-right: -65px;
+  }
+
+/* select only direct children which are divs */
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+@media (min-width: 800px) {
+    .row__medium-col-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__mediumcol-8 {
+      float: left;
+      width: 66.66%;
+    }
   }

@@ -16,3 +16,13 @@
     @mixin-content;
   }
 }
+
+@define-mixin clearFix {
+  /* creates pseudo-blank-content with CSS */
+  &::after {
+    content: "";
+    clear: both;
+    /* added browser support */
+    display: table;
+  }
+}
