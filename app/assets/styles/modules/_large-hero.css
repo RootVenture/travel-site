@@ -1,0 +1,41 @@
+/* underscore in the file name means that it is a module (part of another file */
+.large-hero {
+  position: relative;
+
+  /* double underscore means that it is an element of a block */
+  /* gulp uses & to replicate the root rule selector name */
+  &__text-content {
+    position: absolute;
+    left: 0;
+    /* center text horizontally */
+    width: 100%;
+    text-align: center;
+    /* center text vertically */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 4.8 rem;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 2.9 rem;
+    margin: 0;
+  }
+
+  &__description {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

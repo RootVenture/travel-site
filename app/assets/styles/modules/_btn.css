@@ -1,0 +1,19 @@
+.btn {
+  background-color: $mainBlue;
+  color: #fff;
+  /* removes underline */
+  text-decoration: none;
+  /* give display of inline-block due to padding */
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+
+  /* note BEM modifier with the 2 '-' */
+  &--orange {
+    background-color: $mainOrange;
+  }
+
+  &--large {
+    font-size: 1.25rem;
+    padding: 1.1rem 1.9rem;
+  }
+}
