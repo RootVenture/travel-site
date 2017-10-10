@@ -4,9 +4,18 @@
   &--gutters {
     padding-right: -65px;
   }
+
+  &--gutters-large {
+    padding-right: -100px;
+  }
+
   /* select only direct children which are divs */
   &--gutters > div {
     padding-right: 65px;
+  }
+
+  &--gutters-large > div {
+    padding-right: 100px;
   }
 
   &__b-margin-until-medium {
@@ -26,6 +35,11 @@
     &__medium-col-4--larger {
       float: left;
       width: 37%;
+    }
+
+    &__medium-col-6 {
+      float: left;
+      width: 50%;
     }
 
     &__mediumcol-8 {
