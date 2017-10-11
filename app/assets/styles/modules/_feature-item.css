@@ -9,6 +9,7 @@
   &__icon {
     display: block;
     margin: 0 auto;
+
     @mixin atSmall {
       position: absolute;
       left: 0;
@@ -23,9 +24,9 @@
     text-align: center;
 
     @mixin atSmall {
-      font-size: 1.875rem;
-      margin-top: 1em;
       text-align: left;
+      margin-top: 1em;
+      font-size: 1.875rem;
     }
   }
 }
