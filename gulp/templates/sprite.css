@@ -1,0 +1,10 @@
+/* initialize loop */
+{{#shapes}}
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    /* note 3 curly brace here to escape a backslash in the url */
+    background-image: url('/temp/sprite/css/{{{sprite}}}');
+    background-position: {{position.relative.xy}} {{}};
+  }
+{{/shapes}}
