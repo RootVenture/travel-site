@@ -17,7 +17,7 @@
   }
 }
 
-@define-mixin clearFix {
+@define-mixin clearfix {
   /* creates pseudo-blank-content with CSS */
   &::after {
     content: "";
