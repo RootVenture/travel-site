@@ -10,6 +10,7 @@
   /* double underscore means that it is an element of a block */
   /* gulp uses & to replicate the root rule selector name */
   &__text-content {
+    padding-top: 88px;
     position: absolute;
     left: 0;
     /* center text horizontally */
@@ -18,6 +19,10 @@
     /* center text vertically */
     top: 50%;
     transform: translateY(-50%);
+
+    @mixin atMedium {
+      padding-top: 88px;
+    }
   }
 
   &__title {

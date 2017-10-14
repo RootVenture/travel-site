@@ -19,9 +19,18 @@ gulp.task("watch", function() {
   watch("./app/assets/styles/**/*.css", function() {
     gulp.start("cssInject");
   });
+
+  watch("./app/assets/scripts/**/*.js", function() {
+    gulp.start("scriptsRefresh");
+  });
 });
 
 // Note: 2nd argument is the 'dependency' that needs to be run prior to the callback function
 gulp.task("cssInject", ["styles"], function() {
   return gulp.src("./app/temp/styles/styles.css").pipe(browserSync.stream());
+});
+
+// prevent the page refresh until the scripts task is done
+gulp.task("scriptsRefresh", ["scripts"], function() {
+  browserSync.reload();
 });
