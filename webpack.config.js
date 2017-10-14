@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "App.js"
   },
-  // babel set up
+  // babel object set up
   module: {
     loaders: [
       {
@@ -15,7 +15,7 @@ module.exports = {
         query: {
           presets: ["es2015"]
         },
-        // only want webpack to apply to js files
+        // only want webpack to apply to js files (REGEX)
         test: /\.js$/,
         exclude: /node_modules/
       }
