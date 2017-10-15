@@ -16,7 +16,7 @@
     @mixin atLarge {
       /* prevent image load until class change by lazysizes */
       & lazyloaded {
-        background: url("/assets/images/testimonials-bg.jpg") top center
+        background: url("../../assets/images/testimonials-bg.jpg") top center
           no-repeat;
         background-size: cover;
       }
