@@ -6,6 +6,11 @@
     /* note 3 curly brace here to escape a backslash in the url */
     background-image: url('/assets/images/sprites/{{{sprite}}}');
   }
+
+  .no-svg .icon {
+    /* filter function replaceSvgWithPng wraps around our sprites */
+    background-image: url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+  }
   {{/first}}
   .icon--{{base}} {
     width: {{width.outer}}px;
