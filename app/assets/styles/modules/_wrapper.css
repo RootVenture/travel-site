@@ -13,6 +13,9 @@
     max-width: 976px;
   }
 
+  &--narrow {
+    max-width: 470px;
+  }
   /* no additional horizontal padding on nested wrappers */
   .wrapper {
     padding-left: 0;
